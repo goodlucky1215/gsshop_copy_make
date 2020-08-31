@@ -152,7 +152,7 @@ $grin: rgb(111, 194, 34);
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 14rem;
+    font-size: 13rem;
     font-weight: 1000;
     & a {
       color: rgba(114, 109, 109, 0.5);
@@ -183,25 +183,25 @@ $grin: rgb(111, 194, 34);
     font-size: 2.2rem;
     display: block;
     color: white;
-    top: 78rem;
+    top: 76rem;
     animation-duration: 0.3s;
     animation-name: slidein;
   }
 }
 @keyframes slidein {
   from {
-    top: 81rem;
+    top: 90rem;
   }
 
   to {
-    top: 78rem;
+    top: 76rem;
   }
 }
 
 #scroll_wrap {
   position: absolute;
   left: 48.5%;
-  z-index: 1;
+
   transform: translateY(-15rem);
   width: 3.5%;
   height: 10%;
@@ -249,8 +249,6 @@ $grin: rgb(111, 194, 34);
   width: 100%;
   height: 100vh;
   background: linear-gradient(90deg, white 70%, $grin 30%);
-  //animation-duration: 4s;
-  //animation-name: section2_bg;
   .section2_wirte {
     position: absolute;
     width: 60%;
@@ -528,14 +526,13 @@ $grin: rgb(111, 194, 34);
   & .section4_write_wrap {
     width: 68%;
     margin: 0 auto;
-    height: 60%;
+    height: 75%;
     position: relative;
     top: 27%;
     border-top: 0.1rem gray solid;
     & .section4_write {
       padding: 4rem;
       border-bottom: 0.1rem gray solid;
-      overflow: hidden;
       height: 10%;
       transition: height 0.3s;
       & .section4_write1 {
@@ -559,7 +556,7 @@ $grin: rgb(111, 194, 34);
           color: gray;
           &:first-child {
             padding-top: 1.6rem;
-            padding-bottom: 6rem;
+            padding-bottom: 5rem;
           }
         }
       }
@@ -723,6 +720,7 @@ $grin: rgb(111, 194, 34);
           width: 100%;
           background-color: white;
           position: relative;
+
           & .section5_write3_1_ti {
             position: absolute;
             margin-top: 4rem;
@@ -756,6 +754,7 @@ $grin: rgb(111, 194, 34);
             top: 55%;
             transform: translate(0, -50%);
             font-size: 1.6rem;
+            padding-right: 3rem;
             &:hover {
               cursor: pointer;
               text-decoration: underline;

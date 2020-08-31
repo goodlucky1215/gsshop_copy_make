@@ -55,7 +55,7 @@ section2_button2[0].addEventListener("click", function () {
   section2_button_fc(section2_button_i);
 });
 function section2_p2_big() {
-  section2_p2[0].style.top = "24%";
+  section2_p2[0].style.top = "22%";
   section2_p2[0].style.fontSize = "150px";
   section2_p2[0].style.left = "13.7%";
   section2_p2[0].style.zIndex = "0";
