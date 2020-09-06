@@ -34,11 +34,9 @@ document.addEventListener("mousewheel", function (e) {
     if (section_wrap_length - 2 > k) {
       k++;
       button_color(k);
-      button_wrap.style.opacity = "1";
     } else if (section_wrap_length - 1 > k) {
       k++;
       button_wrap.style.right = "-10rem";
-      button_wrap.style.opacity = "0";
       header_wrap.style.color = "black";
     }
   } else {
@@ -48,7 +46,6 @@ document.addEventListener("mousewheel", function (e) {
       if (button_wrap.style.right === "-10rem") {
         button_wrap.style.right = "0rem";
       }
-      button_wrap.style.opacity = "1";
     }
   }
   header_wrap_color(k);

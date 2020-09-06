@@ -6,7 +6,7 @@ const section1_write_a = section1_write[0].getElementsByTagName("a");
 
 let i = -1;
 for (let k = 0; k < section1_write_a.length; k++) {
-  section1_write_a[k].style.color = "rgba(114, 109, 109, 0.5)";
+  section1_write_a[k].style.color = "white";
   section1_word[k].style.display = "none";
 }
 function time_section1_write() {
@@ -17,15 +17,16 @@ function time_section1_write() {
       section1_word[i - 1].style.display = "none";
     }
   } else if (i == section1_write_a.length + 1) {
-    i = 0;
-  }
-  for (let k = 0; k < section1_write_a.length; k++) {
-    if (k == i) {
-      section1_write_a[i].style.color = "white";
-      section1_word[i].style.display = "block";
-    } else {
-      section1_write_a[k].style.color = "rgba(114, 109, 109, 0.5)";
-      section1_word[k].style.display = "none";
+    i = -1;
+  } else {
+    for (let k = 0; k < section1_write_a.length; k++) {
+      if (k == i) {
+        section1_write_a[i].style.color = "white";
+        section1_word[i].style.display = "block";
+      } else {
+        section1_write_a[k].style.color = "rgba(114, 109, 109, 0.5)";
+        section1_word[k].style.display = "none";
+      }
     }
   }
 }

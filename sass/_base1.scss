@@ -183,18 +183,18 @@ $grin: rgb(111, 194, 34);
     font-size: 2.2rem;
     display: block;
     color: white;
-    top: 76rem;
+    top: 80%;
     animation-duration: 0.3s;
     animation-name: slidein;
   }
 }
 @keyframes slidein {
   from {
-    top: 90rem;
+    top: 90%;
   }
 
   to {
-    top: 76rem;
+    top: 80%;
   }
 }
 

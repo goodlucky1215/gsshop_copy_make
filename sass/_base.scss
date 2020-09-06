@@ -7,3 +7,16 @@
   overflow-y: hidden;
   overflow-x: hidden;
 }
+@media screen and (max-width: 768px) and (max-height: 1000px) {
+  /* 1rem 4px */
+  html {
+    font-size: 25%;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-height: 800px) {
+  /* 1rem 4px */
+  html {
+    font-size: 10%;
+  }
+}
