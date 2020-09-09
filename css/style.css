@@ -24,106 +24,94 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  justify-content: space-between;
-  z-index: 100; }
+  z-index: 10; }
 
 #header_wrap {
   width: 100%;
-  display: flex;
   padding: 2rem 0;
-  justify-content: space-between;
+  display: flex;
   font-weight: bolder;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: white;
-  height: 9rem; }
+  color: white; }
+
+.header_title {
+  flex-grow: 3;
+  margin-left: 4%;
+  font-size: 6rem; }
+  .header_title h1:hover {
+    cursor: pointer; }
+
+.header_mainbar {
+  flex-grow: 3;
+  margin: 3rem 10rem;
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  justify-content: space-between; }
+  .header_mainbar a:hover {
+    cursor: pointer; }
+
+.header_bar {
+  flex-grow: 2;
+  justify-content: flex-end;
+  display: flex;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2.3rem; }
+  .header_bar a {
+    padding-right: 1rem; }
+    .header_bar a:hover {
+      cursor: pointer; }
+
+.langg {
+  flex-grow: 1;
+  margin-top: 1rem; }
+  .langg div {
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 2rem;
+    font-size: 2.5rem; }
+  .langg p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem; }
+  .langg .k:hover {
+    color: #6fc222;
+    cursor: pointer; }
+  .langg .eng {
+    display: none; }
+  .langg:hover .eng {
+    display: block; }
+    .langg:hover .eng:hover {
+      color: #6fc222;
+      cursor: pointer; }
 
 #header_menu {
   display: none;
   margin: 0;
   padding: 0;
   background-color: white;
-  height: 30rem;
+  height: 25rem;
   width: 100%; }
   #header_menu .header_line {
     border-bottom: 0.1rem gray solid;
     margin-bottom: 4rem; }
   #header_menu .main_menu {
     width: 35%;
-    margin-left: 33%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-left: 2rem; }
-    #header_menu .main_menu div:nth-child(2) {
-      margin-right: 2rem; }
+    padding-left: 5.2rem; }
     #header_menu .main_menu .main_menu1 {
       display: flex;
       flex-direction: column;
-      text-align: center;
-      padding-right: 3rem; }
+      text-align: center; }
     #header_menu .main_menu a {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       color: gray;
       text-decoration: none;
       margin-bottom: 2rem; }
       #header_menu .main_menu a:hover {
-        color: #6fc222; }
-
-.header_title {
-  font-size: 6rem;
-  width: 30rem;
-  margin-left: 5%; }
-  .header_title h1:hover {
-    cursor: pointer; }
-
-.header_mainbar {
-  display: flex;
-  width: 35%;
-  align-items: center;
-  font-size: 3rem;
-  justify-content: space-between; }
-  .header_mainbar a {
-    padding-right: 4rem; }
-    .header_mainbar a:hover {
-      cursor: pointer; }
-
-.header_bar {
-  display: flex;
-  text-align: center;
-  width: 35rem;
-  height: 6rem;
-  padding-top: 1rem;
-  font-size: 2.3rem; }
-  .header_bar a {
-    padding-top: 1.5rem;
-    padding-left: 1rem; }
-    .header_bar a:hover {
-      cursor: pointer; }
-
-.langg {
-  margin-left: 2rem;
-  margin-top: 0.6rem;
-  border: 1px solid gray;
-  border-radius: 1rem;
-  font-size: 2.5rem;
-  padding: 0 3rem;
-  padding-top: 0.5rem;
-  height: 3rem; }
-  .langg p {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .langg .k:hover {
-    color: #6fc222; }
-  .langg .eng {
-    display: none; }
-  .langg:hover {
-    padding-bottom: 1.7rem; }
-    .langg:hover .eng {
-      display: block; }
-      .langg:hover .eng:hover {
         color: #6fc222; }
 
 .section_wrap {
@@ -143,9 +131,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 25%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +146,7 @@
     width: 1.8rem;
     height: 1.8rem;
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3%;
     margin-left: 49.5%;
     border-radius: 5rem;
     background-color: rgba(114, 109, 109, 0.466); }
@@ -169,7 +154,6 @@
     display: none; }
 
 #section1 .section1_word {
-  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -177,21 +161,21 @@
   font-size: 2.2rem;
   display: block;
   color: white;
-  top: 80%;
+  top: 75%;
   animation-duration: 0.3s;
   animation-name: slidein; }
 
 @keyframes slidein {
   from {
-    top: 90%; }
+    top: 85%; }
   to {
-    top: 80%; } }
+    top: 75%; } }
 
 #scroll_wrap {
   position: absolute;
   left: 48.5%;
   transform: translateY(-15rem);
-  width: 3.5%;
+  width: 4%;
   height: 10%;
   display: flex;
   flex-direction: column;
@@ -382,10 +366,7 @@
         font-size: 6rem;
         height: 100vh;
         font-weight: 1000;
-        border-left: 0.1rem rgba(133, 133, 133, 0.671) solid;
-        display: flex;
-        align-items: flex-end;
-        justify-items: center; }
+        border-left: 0.1rem rgba(133, 133, 133, 0.671) solid; }
         #section3 .section3_title_write1 #section3_menu .section3_write .section3_write1 {
           position: absolute;
           left: 50%;
@@ -449,7 +430,7 @@
         #section4 .section4_title_write a:first-child::before {
           content: " ";
           position: absolute;
-          width: 13%;
+          width: 14.5%;
           top: 75%;
           border-bottom: 1.2rem #6fc222 solid;
           z-index: -1; }
@@ -487,10 +468,6 @@
           #section4 .section4_write_wrap .section4_write .section4_word p:first-child {
             padding-top: 1.6rem;
             padding-bottom: 5rem; }
-      #section4 .section4_write_wrap .section4_write .section4_last::after {
-        content: "";
-        display: block;
-        border-top: 0.1rem gray solid; }
     #section4 .section4_write_wrap .s1 {
       height: 30%;
       background-color: #fbffc1; }
@@ -500,14 +477,12 @@
 #section5 {
   position: relative;
   width: 100%;
-  height: 100vh;
-  left: 0;
-  top: 0; }
+  height: 100vh; }
   #section5 .section5_title_write {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 77%;
+    top: 27%;
     transform: translate(-50%, -50%); }
     #section5 .section5_title_write .section5_title_write1 p {
       text-align: center;
@@ -520,9 +495,13 @@
         font-size: 1.8rem;
         margin-bottom: 6rem; }
   #section5 .section5_write_wrap {
-    height: 100vh;
+    position: absolute;
+    height: 70%;
     width: 70%;
     margin: 0 auto;
+    left: 50%;
+    top: 37%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between; }
     #section5 .section5_write_wrap .section5_write {

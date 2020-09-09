@@ -7,28 +7,88 @@ $grin: rgb(111, 194, 34);
   display: flex;
   flex-direction: column;
   position: fixed;
-  justify-content: space-between;
-  z-index: 100;
+  z-index: 10;
 }
 #header_wrap {
   width: 100%;
-  display: flex;
   padding: 2rem 0;
-  justify-content: space-between;
+  display: flex;
   font-weight: bolder;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
   color: white;
-  height: 9rem;
+}
+.header_title {
+  flex-grow: 3;
+  margin-left: 4%;
+  font-size: 6rem;
+  & h1:hover {
+    cursor: pointer;
+  }
+}
+.header_mainbar {
+  flex-grow: 3;
+  margin: 3rem 10rem;
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  justify-content: space-between;
+  & a {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.header_bar {
+  flex-grow: 2;
+  justify-content: flex-end;
+  display: flex;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2.3rem;
+  & a {
+    padding-right: 1rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.langg {
+  flex-grow: 1;
+  margin-top: 1rem;
+  & div {
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+  }
+  & p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .k:hover {
+    color: $grin;
+    cursor: pointer;
+  }
+  .eng {
+    display: none;
+  }
+  &:hover {
+    .eng {
+      display: block;
+      &:hover {
+        color: $grin;
+        cursor: pointer;
+      }
+    }
+  }
 }
 #header_menu {
   display: none;
   margin: 0;
   padding: 0;
   background-color: white;
-  height: 30rem;
+  height: 25rem;
   width: 100%;
   .header_line {
     border-bottom: 0.1rem gray solid;
@@ -36,90 +96,20 @@ $grin: rgb(111, 194, 34);
   }
   .main_menu {
     width: 35%;
-    margin-left: 33%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-left: 2rem;
-    div:nth-child(2) {
-      margin-right: 2rem;
-    }
+    padding-left: 5.2rem;
     .main_menu1 {
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding-right: 3rem;
     }
     & a {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       color: gray;
       text-decoration: none;
       margin-bottom: 2rem;
-      &:hover {
-        color: $grin;
-      }
-    }
-  }
-}
-.header_title {
-  font-size: 6rem;
-  width: 30rem;
-  margin-left: 5%;
-  & h1:hover {
-    cursor: pointer;
-  }
-}
-.header_mainbar {
-  display: flex;
-  width: 35%;
-  align-items: center;
-  font-size: 3rem;
-  justify-content: space-between;
-  & a {
-    padding-right: 4rem;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-.header_bar {
-  display: flex;
-  text-align: center;
-  width: 35rem;
-  height: 6rem;
-  padding-top: 1rem;
-  font-size: 2.3rem;
-  & a {
-    padding-top: 1.5rem;
-    padding-left: 1rem;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-.langg {
-  margin-left: 2rem;
-  margin-top: 0.6rem;
-  border: 1px solid gray;
-  border-radius: 1rem;
-  font-size: 2.5rem;
-  padding: 0 3rem;
-  padding-top: 0.5rem;
-  height: 3rem;
-  & p {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .k:hover {
-    color: $grin;
-  }
-  .eng {
-    display: none;
-  }
-  &:hover {
-    padding-bottom: 1.7rem;
-    .eng {
-      display: block;
       &:hover {
         color: $grin;
       }
@@ -145,9 +135,6 @@ $grin: rgb(111, 194, 34);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 25%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +152,7 @@ $grin: rgb(111, 194, 34);
       width: 1.8rem;
       height: 1.8rem;
       display: flex;
-      margin-top: 2rem;
+      margin-top: 3%;
       margin-left: 49.5%;
       border-radius: 5rem;
       background-color: rgba(114, 109, 109, 0.466);
@@ -175,7 +162,6 @@ $grin: rgb(111, 194, 34);
     }
   }
   .section1_word {
-    z-index: 1;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -183,18 +169,18 @@ $grin: rgb(111, 194, 34);
     font-size: 2.2rem;
     display: block;
     color: white;
-    top: 80%;
+    top: 75%;
     animation-duration: 0.3s;
     animation-name: slidein;
   }
 }
 @keyframes slidein {
   from {
-    top: 90%;
+    top: 85%;
   }
 
   to {
-    top: 80%;
+    top: 75%;
   }
 }
 
@@ -203,7 +189,7 @@ $grin: rgb(111, 194, 34);
   left: 48.5%;
 
   transform: translateY(-15rem);
-  width: 3.5%;
+  width: 4%;
   height: 10%;
   display: flex;
   flex-direction: column;
@@ -429,9 +415,6 @@ $grin: rgb(111, 194, 34);
         height: 100vh;
         font-weight: 1000;
         border-left: 0.1rem rgba(133, 133, 133, 0.671) solid;
-        display: flex;
-        align-items: flex-end;
-        justify-items: center;
         & .section3_write1 {
           position: absolute;
           left: 50%;
@@ -508,7 +491,7 @@ $grin: rgb(111, 194, 34);
         &::before {
           content: " ";
           position: absolute;
-          width: 13%;
+          width: 14.5%;
           top: 75%;
           border-bottom: 1.2rem $grin solid;
           z-index: -1;
@@ -560,13 +543,6 @@ $grin: rgb(111, 194, 34);
           }
         }
       }
-      & .section4_last {
-        &::after {
-          content: "";
-          display: block;
-          border-top: 0.1rem gray solid;
-        }
-      }
     }
     & .s1 {
       height: 30%;
@@ -581,13 +557,11 @@ $grin: rgb(111, 194, 34);
   position: relative;
   width: 100%;
   height: 100vh;
-  left: 0;
-  top: 0;
   & .section5_title_write {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 77%;
+    top: 27%;
     transform: translate(-50%, -50%);
     & .section5_title_write1 p {
       text-align: center;
@@ -605,9 +579,13 @@ $grin: rgb(111, 194, 34);
     }
   }
   & .section5_write_wrap {
-    height: 100vh;
+    position: absolute;
+    height: 70%;
     width: 70%;
     margin: 0 auto;
+    left: 50%;
+    top: 37%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
 
@@ -723,29 +701,25 @@ $grin: rgb(111, 194, 34);
 
           & .section5_write3_1_ti {
             position: absolute;
-            margin-top: 4rem;
-            margin-left: 4rem;
+            top: 15%;
+            left: 10%;
             font-size: 2rem;
             font-weight: bolder;
-            padding-right: 20rem;
           }
-          & .section5_write3_1_bu_plu,
-          & .section5_write3_1_bu_min {
+          & .section5_write3_1_bu {
             position: absolute;
-            margin-top: 4.5rem;
-            margin-right: 4rem;
-            font-size: 3rem;
-            font-weight: bolder;
-            color: gray;
-            &:hover {
-              cursor: pointer;
+            top: 12%;
+            left: 74%;
+            & .section5_write3_1_bu_plu,
+            & .section5_write3_1_bu_min {
+              padding: 0.5rem;
+              font-size: 3rem;
+              font-weight: bolder;
+              color: gray;
+              &:hover {
+                cursor: pointer;
+              }
             }
-          }
-          & .section5_write3_1_bu_plu {
-            right: 0rem;
-          }
-          & .section5_write3_1_bu_min {
-            right: 4rem;
           }
           & .section5_write3_2_ti {
             display: none;
@@ -768,11 +742,10 @@ $grin: rgb(111, 194, 34);
           position: relative;
           & .section5_write3_3_ti {
             position: absolute;
-            margin-top: 4rem;
-            margin-left: 4rem;
+            top: 15%;
+            left: 10%;
             font-size: 2rem;
             font-weight: bolder;
-            padding-right: 20rem;
             color: white;
           }
           & .section5_write3_3 {
@@ -830,7 +803,7 @@ $grin: rgb(111, 194, 34);
   position: fixed;
   top: 0;
   right: 0;
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 .section_button {
   margin: 1rem;
