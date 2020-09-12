@@ -2,8 +2,8 @@
 ### GS SHOP 클론 코딩입니다.
 ### 코드 설명만 하도록 하겠습니다.
 ### html, scss, javascript로 구성된 코드입니다.
-Link: [Google][googlelink]
-[googlelink]: https://company.gsshop.com/main/index 'go'
+* [참고한 사이트](https://company.gsshop.com/main/index)
+* [내가 만든 사이트](https://gsshopcopy.netlify.app/)
 ## 1.SCSS
 ```
 $grin: rgb(111, 194, 34); //색 지정
